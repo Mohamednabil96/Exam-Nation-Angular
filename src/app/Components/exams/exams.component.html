@@ -1,0 +1,49 @@
+<div class="container my-4">
+  <a class="btn btn-dark my-5" [routerLink]="['/exam/0/edit']">Add Exam</a>
+  <div class="row">
+    <div *ngFor="let exam of exams">
+      <div class="card mb-3 bg-light">
+        <div class="row g-0">
+          <div class="col-md-3">
+            <img
+              src="{{ exam.image }}"
+              class="img-fluid rounded-start"
+              style="height: 150px; width: 300px; object-fit: fill"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-9">
+            <div class="card-body">
+              <h3 class="card-title">
+                {{ exam.name }}
+              </h3>
+              <p class="card-text">
+                {{ exam.description }}
+              </p>
+              <div class="text-end">
+                <a
+                  class="btn btn-outline-success mx-1"
+                  [routerLink]="['/showstudentsgrades', exam.id]"
+                  >Show Students Grades</a
+                >
+                <a
+                  class="btn btn-outline-warning mx-1"
+                  [routerLink]="['/showquestions', exam.id]"
+                  >Questions</a
+                >
+                <a
+                  class="btn btn-outline-secondary mx-1"
+                  [routerLink]="['/exam', exam.id, 'edit']"
+                  >Edit</a
+                >
+                <a class="btn btn-danger mx-1" (click)="confirmDelete(exam.id)"
+                  >Delete Exam</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

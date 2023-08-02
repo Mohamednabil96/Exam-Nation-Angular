@@ -1,0 +1,34 @@
+<!-- Start Carousel -->
+<div class="position-relative">
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="overlay"></div>
+        <img src="assets/Images/home1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption text-light">
+          <h1 class="my-md-5 lh-1">TAKE YOUR EXAM ANYWHERE, ANYTIME</h1>
+          <p class="lh-1">Convenient online exams that fit your schedule and location</p>
+          <a [routerLink]="'/aboutus'" class="btn btn-outline-secondary my-md-5">About Us</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="overlay"></div>
+        <img src="assets/Images/home2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption text-light">
+          <h1 class="my-md-5 lh-1">JOIN THE ONLINE EXAM REVOLUTION</h1>
+          <p class="lh-1">Register Now for Taking Exams in Just a Few Clicks</p>
+          <a [routerLink]="'/aboutus'" class="btn btn-outline-secondary my-md-5">About Us</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+<!-- End Carousel -->

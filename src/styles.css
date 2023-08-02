@@ -1,0 +1,54 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+  font-family: "Noto Sans", sans-serif;
+}
+
+:root {
+  --rose-color: rgb(242, 84, 84);
+  --main-section-padding: 50px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", "sans-serif";
+}
+section,
+footer {
+  padding-block: var(--main-section-padding);
+}
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  line-height: 1.75em;
+  color: #666;
+}
+
+.setting {
+  position: fixed;
+  top: 20%;
+  left: 0;
+  z-index: 90;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 10px;
+  border-radius: 0 5px 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+a {
+  all: unset;
+  color: white;
+  text-decoration: white;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
